@@ -1,0 +1,18 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* NAVBAR */
+
+.navbar {
+  border-radius:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background:url('wood_1.png');
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color:white;
+}
