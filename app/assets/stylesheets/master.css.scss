@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+body {
+  background: url('bg.png');
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+
 /* NAVBAR */
 
 .navbar {
@@ -30,6 +37,10 @@
 h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
 }
+
+
+
+/* HERO */
 
 .frosty {
   background:rgba(0,0,0, 0.5);
