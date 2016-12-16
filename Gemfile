@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'mini_magick', '~> 4.3.1'
+
+gem 'fog'
+
+gem 'figaro'
+
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+
 gem 'devise'
 
 gem 'simple_form'
