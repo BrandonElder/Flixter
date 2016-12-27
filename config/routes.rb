@@ -10,10 +10,10 @@ Flixter::Application.routes.draw do
     resources :sections, only: [:update]
     resources :lessons, only: [:update]
     resources :sections, only: [] do
-      resources :lessons, only: [:create]
+      resources :lessons, only: [:create, :new]
     end
     resources :courses, only: [:new, :create, :show] do
-      resources :sections, only: [:create]
+      resources :sections, only: [:create, :new]
     end
   end
 
