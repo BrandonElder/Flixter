@@ -60,9 +60,50 @@
 
 <div id="footer">
   <div class="container">
-    <b>Teachers</b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+    <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', team_path %>
+        <br />
+        <%= link_to 'Careers', careers_path %>
+        <br />
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        ken@thefirehoseproject.com
+        <br />
+        One Kendall Square
+        <br />
+        Cambridge MA, 02113
+      </div>
+      <div class="col-xs-12 col-sm-3 social">
+        <b>Social</b>
+        <br /><br />
+        <%= link_to 'http://github.com/BrandonElder' do %>
+          <%= image_tag 'github1.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://facebook.com' do %>
+          <%= image_tag 'facebook1.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://twitter.com' do %>
+          <%= image_tag 'twitter1.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://pinterest.com' do %>
+          <%= image_tag 'pintrest1.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'http://instagram.com' do %>
+          <%= image_tag 'instagram1.png', class: 'social-button' %>
+        <% end %>
+      </div>
   </div>
 </div>
 
