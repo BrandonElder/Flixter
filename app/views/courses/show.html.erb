@@ -7,7 +7,7 @@
     <br />
   </div>
 
-  <div class="col-xs-2 vr">
+  <div class="col-xs-3 col-md-3 vr">
     <h2 class="label label-default">
       <%= number_to_currency @course.cost %>
     </h2>
@@ -36,8 +36,8 @@
   <% end %>
 </div>
 
-<div class="col-xs-4 cd">
-  <%= @course.description %>
+<div class="col-xs-5 col-md-5 cd">
+  <b><%= @course.description %></b>
 </div>
 
   <div class="col-xs-12">

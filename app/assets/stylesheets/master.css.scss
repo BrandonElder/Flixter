@@ -2,6 +2,91 @@
 @import "bootstrap";
 
 
+
+/* BOX */
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:10px;
+}
+
+
+
+/* BODY */
+
+body {
+  background: url('bg.png');
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+  border-radius:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background:url('wood_1.png');
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color:white;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
+
+
+/* HERO */
+
+.hero {
+  background: url('hero.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+.frosty {
+  background:rgba(0,0,0, 0.5);
+  color:white;
+}
+
+.frosty h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+}
+
+
+
+
+
+/* HORIONTAL RULE IN DASHBOARD */
+
 .hrd {
   border: 0;
   height: 2px;
@@ -9,6 +94,10 @@
   background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+
+
+
+/* LINKS */
 
 a {
   color:black;
@@ -24,8 +113,14 @@ a:hover {
   text-align:left;
 }
 
-ul {
-      list-style-type: none;
+
+
+/* SECTIONS */
+
+.section {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
 }
 
 .section-li {
@@ -35,13 +130,10 @@ ul {
   margin:20px;
 }
 
-ul .header {
-  font-size:25px;
-}
 
-ul .header .glyphicon {
-  font-size:20px;
-}
+
+
+/* LESSONS */
 
 .lessons li {
   background:black;
@@ -61,25 +153,6 @@ ul .header .glyphicon {
 .lessons li p {
   margin:0;
 }
-
-
-body {
-  background: url('bg.png');
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-}
-
-.clr {
-  clear:both;
-}
-
-.field_with_errors {
-  color: #ff3333;
-  background-color: #FFEEEE;
-  border-radius: 3px;
-  padding:8px;
-  margin:10px
-}
-
 
 .lesson {
   background-color:black;
@@ -102,83 +175,6 @@ body {
 
 
 
-.section {
-  border: 1px solid;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  padding:20px;
-}
-
-
-
-/* BOX */
-
-.booyah-box {
-  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-  box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  padding:10px;
-}
-
-.booyah-box h2, .booyah-box h1 {
-  margin:10px;
-}
-
-
-/* NAVBAR */
-
-.navbar {
-  border-radius:0;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  box-shadow: 0px 1px 3px #2a2a2a;
-  background:url('wood_1.png');
-}
-
-.navbar-inverse a.navbar-brand {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  color:white;
-}
-
-
-.hero {
-  background: url('hero.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height:370px;
-  box-shadow: 0px 3px 8px #2a2a2a;
-}
-
-h1, h2, h3, h4, h5, h6, .navbar {
-  margin:0;
-}
-
-
-
-/* HERO */
-
-.frosty {
-  background:rgba(0,0,0, 0.5);
-  color:white;
-}
-
-.frosty h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  text-shadow: rgba(0,0,0,0.95) 1px 1px;
-}
-
-.frosty h2 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  text-shadow: rgba(0,0,0,0.95) 1px 1px;
-}
-
 
 /* IMAGES */
 
@@ -187,7 +183,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
     max-width: 100%;
     max-height: 350px;
 }
-
 
 .imgs {
   margin: 0 auto;
@@ -212,11 +207,47 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 
 
+
+/* VERTICAL RULE + BOTTOM DIV BORDER ON COURSES SHOW */
+
 .vr {
   border-right: 3px solid grey;
   height: 100%;
+  padding-left: 80px;
 }
 
 .cd {
-  padding-left: 70px;
+  padding-left: 60px;
+  padding-top: 16px;
+}
+
+
+
+
+/* LISTS & SOME OTHER STUFF */
+
+ul {
+      list-style-type: none;
+}
+
+ul .header {
+  font-size:25px;
+}
+
+ul .header .glyphicon {
+  font-size:20px;
+}
+
+
+.clr {
+  clear:both;
+}
+
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin:10px
 }
