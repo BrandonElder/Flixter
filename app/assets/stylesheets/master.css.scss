@@ -50,6 +50,23 @@ h1, h2, h3, h4, h5, h6, .navbar {
   margin:0;
 }
 
+.navbar-brand i {
+  padding-right: 4px;
+}
+
+.navbar-header{
+  padding-left: 20px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 18px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 
 
 /* HERO */
@@ -81,6 +98,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.icons {
+  height: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 
 
