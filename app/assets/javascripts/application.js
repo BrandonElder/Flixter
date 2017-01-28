@@ -17,3 +17,10 @@
 //= require_tree .
 
 //= require jquery-ui
+function main() {
+  $('.hero').hide();
+  $('.hero').fadeIn(2000);
+  $('.frosty').hide();
+  $('.frosty').fadeIn(3000);
+}
+$(document).ready(main);

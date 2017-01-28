@@ -37,7 +37,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background-color: #0E0F0F;
+  background:url('blackorchid.png');
 }
 
 .navbar-inverse a.navbar-brand {
@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    padding-right: 6px;
 }
 
 
