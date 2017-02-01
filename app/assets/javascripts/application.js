@@ -17,10 +17,26 @@
 //= require_tree .
 
 //= require jquery-ui
-function main() {
+
+$(document).ready(function(main) {
   $('.hero').hide();
   $('.hero').fadeIn(2000);
   $('.frosty').hide();
-  $('.frosty').fadeIn(3000);
-}
-$(document).ready(main);
+  $('.frosty').fadeIn(4000);
+  $('.lmbtn').click(function() {
+    $('.frosty').fadeOut(3000);
+  });
+  $('.lmbtn').hover(
+    function(){
+      $(this).addClass('active');
+    },
+    function(){
+      $(this).removeClass('active');
+    }
+  );
+  //$('.social a').hover(function() {
+    //$(this).effect('bounce', {times:3}, 500);
+  //});
+  //$('.social').sortable();
+});
+
