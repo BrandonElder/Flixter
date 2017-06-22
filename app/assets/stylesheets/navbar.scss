@@ -1,0 +1,37 @@
+/* NAVBAR */
+
+.navbar {
+  border-radius:0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background:url('blackorchid.png');
+}
+
+.navbar-inverse a.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color:white;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
+.navbar-brand i {
+  padding-right: 4px;
+}
+
+.navbar-header{
+  padding-left: 20px;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 18px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-right: 6px;
+}

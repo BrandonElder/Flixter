@@ -2,104 +2,27 @@
 <html>
 <head>
   <title>Flixter</title>
+  <%= csrf_meta_tags %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-  <link href="http://vjs.zencdn.net/5.11.7/video-js.css" rel="stylesheet">
-  <script src="http://vjs.zencdn.net/5.11.7/video.js"></script>
-  <script src="http://vjs.zencdn.net/5.9.2/video.js"></script>
-  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <link href="https://vjs.zencdn.net/5.11.7/video-js.css" rel="stylesheet">
 </head>
 <body>
 
 <div id="wrap">
-  <nav class="navbar navbar-inverse" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/"><i class="fa fa-magic" aria-hidden="true"></i> Flixter</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><%= link_to 'See All Courses', courses_path %>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <% if user_signed_in? %>
-            <li><%= link_to 'My Dashboard', dashboard_path %></li>
-            <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
-          <% else %>
-            <li><%= link_to 'Sign in', new_user_session_path %></li>
-            <li><%= link_to 'Sign up', new_user_registration_path %></li>
-          <% end %>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-<% if notice.present? %>
-  <p class="alert alert-info"><%= notice %></p>
-<% end %>
-<% if alert.present? %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-
-<%= yield %>
-
+  <%= render 'layouts/navbar' %>
+  <% if notice.present? %>
+    <p class="alert alert-info"><%= notice %></p>
+  <% end %>
+  <% if alert.present? %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
 </div>
-
-<br class="clr" />
-
-<div id="footer">
-  <div class="container">
-    <div class="col-xs-12 col-sm-3">
-        <b>Teachers</b>
-        <br />
-        <%= link_to 'Teach a Course', new_instructor_course_path %>
-        <br />
-        <%= link_to 'My Dashboard', dashboard_path %>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <b>About</b>
-        <br />
-        <%= link_to 'Team', team_path %>
-        <br />
-        <%= link_to 'Careers', careers_path %>
-        <br />
-        <%= link_to 'Privacy Policy', privacy_path %>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <b>Contact</b>
-        <br />
-        harryhoudini@flixter.com
-        <br />
-        Post Office Box 317
-        <br />
-        Raleigh, NC 27606
-      </div>
-      <div class="col-xs-12 col-sm-3 social">
-        <b>Social</b>
-        <br /><br />
-        <%= link_to 'http://github.com/BrandonElder' do %>
-          <%= image_tag 'github1.png', class: 'social-button' %>
-        <% end %>
-        <%= link_to 'http://facebook.com' do %>
-          <%= image_tag 'facebook1.png', class: 'social-button' %>
-        <% end %>
-        <%= link_to 'http://twitter.com' do %>
-          <%= image_tag 'twitter1.png', class: 'social-button' %>
-        <% end %>
-        <%= link_to 'http://pinterest.com' do %>
-          <%= image_tag 'pintrest1.png', class: 'social-button' %>
-        <% end %>
-        <%= link_to 'http://instagram.com' do %>
-          <%= image_tag 'instagram1.png', class: 'social-button' %>
-        <% end %>
-      </div>
-  </div>
-</div>
-
+<br class="clr">
+<%= render 'layouts/footer' %>
+<script src="https://vjs.zencdn.net/5.11.7/video.js"></script>
+<script src="https://vjs.zencdn.net/5.9.2/video.js"></script>
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
 </body>
 </html>

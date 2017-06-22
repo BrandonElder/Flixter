@@ -1,0 +1,139 @@
+/* Miscellaneous Styles */
+/* BUTTONS, IMAGES AND LISTS */
+
+
+/* BODY */
+
+body {
+  background: url('bg.png');
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+.clr {
+  clear:both;
+}
+
+
+/* BOX */
+
+.booyah-box {
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:10px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:10px;
+}
+
+
+/* Container Below Hero */
+
+.col-xs-10.col-xs-offset-1.text-center {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* HORIONTAL RULE IN DASHBOARD */
+
+.hrd {
+  border: 0;
+  height: 2px;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+
+/* LINKS */
+
+a {
+  color:black;
+  text-decoration:none;
+}
+
+a:hover {
+  color:grey;
+  text-decoration:none;
+}
+
+.titles {
+  text-align:left;
+}
+
+
+/* IMAGES */
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    max-height: 350px;
+}
+
+.imgs {
+  margin: 0 auto;
+}
+
+
+/* BUTTONS */
+
+.btn {
+  border-radius:20;
+}
+
+.btn btn-primary {
+  background: #4385BA
+}
+
+.instructor-btns {
+  position: relative;
+  margin: auto; 
+}
+
+
+/* VERTICAL RULE + BOTTOM DIV BORDER ON COURSES SHOW */
+
+.vr {
+  border-right: 3px solid grey;
+  height: 100%;
+  padding-left: 80px;
+}
+
+.cd {
+  padding-left: 60px;
+  padding-top: 16px;
+}
+
+
+/* LISTS & SOME OTHER STUFF */
+
+ul {
+      list-style-type: none;
+}
+
+ul .header {
+  font-size:25px;
+}
+
+ul .header .glyphicon {
+  font-size:20px;
+}
+
+
+/* Alerts and Notifications */
+
+.field_with_errors {
+  color: #ff3333;
+  background-color: #FFEEEE;
+  border-radius: 3px;
+  padding:8px;
+  margin:10px
+}
+
+.dev-forms {
+  padding: 20px !important;
+}

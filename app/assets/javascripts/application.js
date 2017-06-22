@@ -11,32 +11,7 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
-
-//= require_tree .
-
 //= require jquery-ui
-
-$(document).ready(function(main) {
-  $('.hero').hide();
-  $('.hero').fadeIn(2000);
-  $('.frosty').hide();
-  $('.frosty').fadeIn(4000);
-  $('.lmbtn').click(function() {
-    $('.frosty').fadeOut(3000);
-  });
-  $('.lmbtn').hover(
-    function(){
-      $(this).addClass('active');
-    },
-    function(){
-      $(this).removeClass('active');
-    }
-  );
-  //$('.social a').hover(function() {
-    //$(this).effect('bounce', {times:3}, 500);
-  //});
-  //$('.social').sortable();
-});
-
+//= require bootstrap-sprockets
+//= require hero
