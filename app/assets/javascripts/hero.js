@@ -1,4 +1,4 @@
-$(document).ready(function(main) {
+$(function(main) {
   $('.hero').hide();
   $('.hero').fadeIn(500);
   $('.frosty').hide();
