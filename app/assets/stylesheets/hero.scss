@@ -27,7 +27,7 @@
   text-shadow: rgba(0,0,0,0.95) 1px 1px;
 }
 
-.btn-success {
+.btn-success, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .btn-success:visited {
   color: #fff;
   background-color: #5cb85c;
   border-color: #5cb85c;
@@ -45,4 +45,9 @@
 
 .features {
   background-color: #E3E7E8;
+}
+
+.col-xs-10.col-xs-offset-1.text-center {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

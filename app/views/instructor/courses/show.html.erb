@@ -1,34 +1,3 @@
-<script>
-  $(function() {
-    $('.new-lesson-button').click(function( event ) {
-      var lessonUrl = $(event.target).data('lesson-url'); 
-      $('#newLessonForm').attr('action', lessonUrl);
-      });
-
-    $('.lessons').sortable({
-    update: function( event, ui ) {
-        $.ajax({
-          type: 'PUT',
-          url: ui.item.data('update-url'),
-          dataType: 'json',
-          data: { lesson: { row_order_position: ui.item.index() } }
-        });
-      }
-    });
-
-    $('.sections').sortable({
-      update: function( event, ui ) {
-        $.ajax({
-          type: 'PUT',
-          url: ui.item.data('update-url'),
-          dataType: 'json',
-          data: { section: {row_order_position: ui.item.index() } }
-        });
-      }
-    });
-  });
-</script>
-
 <div class="booyah-box courses-box col-xs-10 col-xs-offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   <%= image_tag current_course.image, class: 'img-responsive imgs' %>
@@ -42,7 +11,7 @@
     </button>
     <%= link_to 'Preview As Student...', course_path(current_course), class: 'btn btn-warning btn-lg' %>
   </div>
-<br />
+  <br />
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
       <li data-update-url="<%= instructor_section_path(section) %>" class="section-li">
@@ -55,10 +24,8 @@
           New Lesson...
         </button>
 
-
         <br class="clr" />
         <br class="clr" />
-
 
         <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>

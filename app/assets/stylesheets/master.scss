@@ -31,36 +31,6 @@ body {
 }
 
 
-/* COURSES */
-
-.courses-box {
-  margin-bottom: 50px;
-  margin-top: 40px;
-}
-
-.courses-hr {
-  margin-bottom: 50px;
-}
-
-
-/* Container Below Hero */
-
-.col-xs-10.col-xs-offset-1.text-center {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-
-/* HORIONTAL RULE IN DASHBOARD */
-
-.hrd {
-  border: 0;
-  height: 2px;
-  background: #333;
-  background-image: linear-gradient(to right, #ccc, #333, #ccc);
-}
-
-
 /* LINKS */
 
 a {
@@ -72,7 +42,6 @@ a:hover {
   color:grey;
   text-decoration:none;
 }
-
 
 
 /* IMAGES */
@@ -105,20 +74,6 @@ a:hover {
 }
 
 
-/* VERTICAL RULE + BOTTOM DIV BORDER ON COURSES SHOW */
-
-.vr {
-  border-right: 3px solid grey;
-  height: 100%;
-  padding-left: 80px;
-}
-
-.cd {
-  padding-left: 60px;
-  padding-top: 16px;
-}
-
-
 /* LISTS & SOME OTHER STUFF */
 
 ul {
@@ -146,4 +101,6 @@ ul .header .glyphicon {
 
 .dev-forms {
   padding: 20px !important;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
